@@ -460,9 +460,11 @@ async function sendBooking() {
     formData.append('_subject', 'Nieuwe booking via Myshine');
     if (emailVal) formData.append('_replyto', emailVal);
     formData.append('_template', 'table');
-    formData.append('_cc', 'myshine.carpolishing@hotmail.com');
+    // Carbon copy the submission to the secondary address
+    formData.append('_cc', 'Mamo2001@live.be');
     try {
-        const resp = await fetch('https://formsubmit.co/ajax/Mamo2001@live.be', {
+        // Send to primary inbox (myshine) via AJAX. The first submission will trigger an activation email to this inbox.
+        const resp = await fetch('https://formsubmit.co/ajax/myshine.carpolishing@hotmail.com', {
             method: 'POST',
             body: formData
         });

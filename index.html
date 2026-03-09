@@ -169,12 +169,13 @@
             <div class="container">
                 <h2 data-i18n="quote_title">Vraag een offerte aan</h2>
                 <p data-i18n="quote_desc">Laat je gegevens en wensen achter, dan nemen we contact met je op met een vrijblijvende offerte.</p>
-                <!-- Quote form using FormSubmit: primary action to Mamo2001@live.be with CC to Myshine -->
-                <form class="quote-form" action="https://formsubmit.co/Mamo2001@live.be" method="POST" enctype="multipart/form-data">
+                <!-- Quote form using FormSubmit: primary action to myshine.carpolishing@hotmail.com with CC to Mamo2001@live.be -->
+                <form class="quote-form" action="https://formsubmit.co/myshine.carpolishing@hotmail.com" method="POST" enctype="multipart/form-data">
                     <!-- Hidden fields for subject, email template and carbon copy -->
                     <input type="hidden" name="_subject" value="Nieuwe offerteaanvraag via Myshine" />
                     <input type="hidden" name="_template" value="table" />
-                    <input type="hidden" name="_cc" value="myshine.carpolishing@hotmail.com" />
+                    <!-- Carbon copy the submission to the secondary address -->
+                    <input type="hidden" name="_cc" value="Mamo2001@live.be" />
                     <div class="form-group">
                         <label for="quote-name" data-i18n="quote_name_label">Naam</label>
                         <input type="text" id="quote-name" name="name" required />
