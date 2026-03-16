@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MyShine | Professioneel Auto Polijsten</title>
+  <meta name="description" content="MyShine professioneel auto polijsten. Lakcorrectie, glansherstel en offerte aanvragen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand">My<span>Shine</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="desktop-nav">
+        <a href="#services">Services</a>
+        <a href="#results">Before / After</a>
+        <a href="#why">Waarom MyShine</a>
+        <a href="#quote">Offerte</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#services">Services</a>
+      <a href="#results">Before / After</a>
+      <a href="#why">Waarom MyShine</a>
+      <a href="#quote">Offerte</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Professioneel auto polijsten</div>
+          <h1>Geef je wagen opnieuw <span>diepe glans</span>.</h1>
+          <p>
+            MyShine focust op lakcorrectie, glansherstel en een strakke afwerking.
+            Duidelijke prijzen, duidelijke services en een resultaat dat opvalt.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#quote" class="btn btn-primary">Boek een offerte</a>
+            <a href="#services" class="btn btn-secondary">Bekijk services</a>
+          </div>
+
+          <div class="hero-meta">
+            <span>Auto polijsten</span>
+            <span>Lakcorrectie</span>
+            <span>Hoogglans</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="hero.jpg" alt="MyShine auto polijsten" class="hero-image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Services</div>
+          <h2>Onze behandelingen</h2>
+          <p>Kies de behandeling die past bij jouw lak en het resultaat dat je wil behalen.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>1-staps polijsten</h3>
+            <div class="price">€275</div>
+            <ul>
+              <li>Lichte krasjes en swirls verminderen</li>
+              <li>Meer glans en diepere laklook</li>
+              <li>Perfect als opfrisbeurt</li>
+            </ul>
+          </article>
+
+          <article class="card featured">
+            <div class="tag">Meest gekozen</div>
+            <h3>2-staps polijsten</h3>
+            <div class="price">€375</div>
+            <ul>
+              <li>Grovere correctie + verfijning</li>
+              <li>Matige krassen en hologrammen aanpakken</li>
+              <li>Sterke balans tussen prijs en resultaat</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>3-staps polijsten</h3>
+            <div class="price">€475</div>
+            <ul>
+              <li>Intensieve lakcorrectie</li>
+              <li>Cut, polish en finish</li>
+              <li>Voor klanten die topresultaat willen</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Glas polijsten</h3>
+            <div class="price">€25+</div>
+            <ul>
+              <li>Voor- of achterruit mogelijk</li>
+              <li>Helderder zicht</li>
+              <li>Fijne storende krasjes verminderen</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="results">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Before / After</div>
+          <h2>Laat het resultaat spreken</h2>
+          <p>Voeg je eigen foto's toe als <strong>before.jpg</strong> en <strong>after.jpg</strong>.</p>
+        </div>
+
+        <div class="comparison-card">
+          <div class="comparison-wrap" id="comparisonWrap">
+            <!-- Base image shows the AFTER (gepolijste lak) on the right side -->
+            <img src="after.jpg" alt="After polishing" class="comparison-img base-img" />
+            <div class="overlay-wrap" id="overlayWrap">
+              <!-- Overlay image shows the BEFORE (beschadigde lak) on the left side -->
+              <img src="before.jpg" alt="Before polishing" class="comparison-img overlay-img" />
+            </div>
+            <div class="comparison-line" id="comparisonLine"></div>
+            <div class="comparison-handle" id="comparisonHandle"></div>
+            <div class="comparison-label before-label">BEFORE</div>
+            <div class="comparison-label after-label">AFTER</div>
+          </div>
+
+          <input type="range" min="0" max="100" value="50" class="comparison-range" id="comparisonRange" aria-label="Before after slider" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Waarom MyShine</div>
+          <h2>Waarom polijsten bij MyShine?</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <h3>Diepe glans</h3>
+            <p>Je wagen krijgt opnieuw een frissere, strakkere en meer verzorgde uitstraling.</p>
+          </div>
+
+          <div class="why-card">
+            <h3>Correcte aanpak</h3>
+            <p>De behandeling wordt gekozen op basis van wat jouw lak echt nodig heeft.</p>
+          </div>
+
+          <div class="why-card">
+            <h3>Duidelijke service</h3>
+            <p>Geen overbodige uitleg. Gewoon helder contact, duidelijke prijzen en netjes werk.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="quote">
+      <div class="container quote-grid">
+        <div class="section-head left">
+          <div class="eyebrow">Offerte</div>
+          <h2>Boek een offerte</h2>
+          <p>Laat je gegevens achter en ik neem contact met je op om je aanvraag te bespreken.</p>
+
+          <div class="booking-note">
+            <strong>Boekingsdagen:</strong> alleen zondag en maandag.
+          </div>
+
+          <div class="contact-mini">
+            <a href="mailto:myshine.carpolishing@hotmail.com">myshine.carpolishing@hotmail.com</a>
+            <a href="https://instagram.com/myshine.be" target="_blank" rel="noopener noreferrer">@myshine.be</a>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm">
+          <label>
+            Naam
+            <input type="text" name="naam" required>
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            Telefoonnummer
+            <input type="tel" name="telefoon">
+          </label>
+
+          <div class="form-grid">
+            <label>
+              Merk
+              <input type="text" name="merk" required>
+            </label>
+
+            <label>
+              Model
+              <input type="text" name="model" required>
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Kleur lak
+              <input type="text" name="kleur" required>
+            </label>
+
+            <label>
+              Bouwjaar
+              <input type="number" name="bouwjaar" min="1950" max="2035" required>
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Behandeling
+              <select name="behandeling" required>
+                <option value="">Kies een behandeling</option>
+                <option>1-staps polijsten</option>
+                <option>2-staps polijsten</option>
+                <option>3-staps polijsten</option>
+              </select>
+            </label>
+
+            <label>
+              Gewenste datum
+              <input type="date" name="datum" id="bookingDate" required>
+            </label>
+          </div>
+
+          <!-- Extra option: Glas polijsten, only selectable in addition to a polijstbehandeling -->
+          <div class="form-grid">
+            <label class="checkbox-label">
+              <input type="checkbox" name="glaspolijsten" value="Glas polijsten" />
+              Glas polijsten (extra)
+            </label>
+          </div>
+
+          <label>
+            Extra info
+            <textarea name="bericht" rows="4" placeholder="Bijvoorbeeld diepe krassen, coating gewenst, enz."></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary full-btn">Verstuur aanvraag</button>
+          <p class="form-feedback" id="formFeedback"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Contact</div>
+          <h2>Neem contact op</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a href="mailto:myshine.carpolishing@hotmail.com" class="contact-card">
+            <span>E-mail</span>
+            <strong>myshine.carpolishing@hotmail.com</strong>
+          </a>
+
+          <a href="https://instagram.com/myshine.be" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span>Instagram</span>
+            <strong>@myshine.be</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/32483675315?text=Hallo%20MyShine,%20ik%20wil%20graag%20meer%20info%20over%20een%20polijstbehandeling." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp MyShine">
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Instagram floating button -->
+  <a class="instagram-float" href="https://instagram.com/myshine.be" target="_blank" rel="noopener noreferrer" aria-label="Instagram MyShine">
+    <span>Instagram</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
