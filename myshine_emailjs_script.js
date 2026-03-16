@@ -2,9 +2,9 @@
 // MyShine automatic mail system (EmailJS)
 // Just replace the three keys below with your own from https://dashboard.emailjs.com
 
-const EMAILJS_PUBLIC_KEY = "PASTE_YOUR_PUBLIC_KEY_HERE";
-const EMAILJS_SERVICE_ID = "PASTE_YOUR_SERVICE_ID_HERE";
-const EMAILJS_TEMPLATE_ID = "PASTE_YOUR_TEMPLATE_ID_HERE";
+const EMAILJS_PUBLIC_KEY = "service_muilh95";
+const EMAILJS_SERVICE_ID = "u0KzLNT7749wf-gue";
+const EMAILJS_TEMPLATE_ID = "template_8igu34c";
 
 // Initialize EmailJS
 (function () {
