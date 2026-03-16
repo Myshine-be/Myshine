@@ -1,243 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Myshine – Auto Polijsten</title>
-    <!-- Site stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Google Fonts for typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyShine - Auto Polijsten</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Myshine</div>
-            <ul class="nav-links">
-                <li><a href="#home" data-i18n="nav_home">Home</a></li>
-                <li><a href="#services" data-i18n="nav_services">Services</a></li>
-                <li><a href="#pricing" data-i18n="nav_pricing">Tarieven</a></li>
-                <li><a href="#quote" data-i18n="nav_quote">Offerte</a></li>
-                <li><a href="booking.html" class="cta" data-i18n="nav_booking">Boeken</a></li>
-            </ul>
-            <div class="lang-toggle">
-                <button id="lang-nl" class="lang-btn active">NL</button>
-                <button id="lang-fr" class="lang-btn">FR</button>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 data-i18n="hero_heading">Professioneel auto polijsten</h1>
-                <p data-i18n="hero_subtitle">Laat je auto weer stralen met Myshine</p>
-                <a href="booking.html" class="btn primary" data-i18n="hero_cta">Boek een afspraak</a>
-            </div>
-            <div class="hero-img-container">
-                <img src="assets/hero.png" alt="Abstracte auto" class="hero-img" />
-            </div>
-        </section>
+<header class="navbar">
+<div class="logo">MyShine</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+<a href="#booking" class="nav-btn">Boeken</a>
+</nav>
+</header>
 
-        <!-- Services Section -->
-        <section id="services" class="section services">
-            <div class="container">
-                <h2 data-i18n="services_title">Onze polijstbeurten</h2>
-                <div class="service-cards">
-                    <!-- 1‑step -->
-                    <div class="card">
-                        <h3 data-i18n="service1_title">1‑staps polijsten</h3>
-                        <p class="price">€275</p>
-                        <ul>
-                            <li data-i18n="service1_feature1">Lichte lakdefecten verwijderd</li>
-                            <li data-i18n="service1_feature2">Een enkele polijstfase voor glans</li>
-                            <li data-i18n="service1_feature3">Keramische coating (±2 jaar)</li>
-                        </ul>
-                    </div>
-                    <!-- 2‑step -->
-                    <div class="card">
-                        <h3 data-i18n="service2_title">2‑staps polijsten</h3>
-                        <p class="price">€375</p>
-                        <ul>
-                            <li data-i18n="service2_feature1">Grovere correctie + verfijnen</li>
-                            <li data-i18n="service2_feature2">Verwijdert matige krassen en hologrammen</li>
-                            <li data-i18n="service2_feature3">Keramische coating (±2 jaar)</li>
-                        </ul>
-                    </div>
-                    <!-- 3‑step -->
-                    <div class="card">
-                        <h3 data-i18n="service3_title">3‑staps polijsten</h3>
-                        <p class="price">€475</p>
-                        <ul>
-                            <li data-i18n="service3_feature1">Intensieve cut, polish en finish</li>
-                            <li data-i18n="service3_feature2">Maximale glans en defectherstel</li>
-                            <li data-i18n="service3_feature3">Keramische coating (±2 jaar)</li>
-                        </ul>
-                    </div>
-                    <!-- Glass polishing -->
-                    <div class="card">
-                        <h3 data-i18n="service4_title">Glas polijsten</h3>
-                        <p class="price" data-i18n="service4_price">€10 / ruit<br>€25 / voor-/achterruit</p>
-                        <ul>
-                            <li data-i18n="service4_feature1">Verwijdert fijne krassen op autoruiten</li>
-                            <li data-i18n="service4_feature2">Herstelt helderheid en zicht</li>
-                        </ul>
-                    </div>
-                    <!-- Spot repair -->
-                    <div class="card">
-                        <h3 data-i18n="service5_title">Spotrepair</h3>
-                        <p class="price" data-i18n="service5_price">Prijs op aanvraag</p>
-                        <ul>
-                            <li data-i18n="service5_feature1">Lokaal herstel van krassen of schade</li>
-                            <li data-i18n="service5_feature2">Alleen het aangetaste paneel wordt aangepakt</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="hero" id="home">
 
-        <!-- Why Myshine Section -->
-        <section class="section benefits">
-            <div class="container">
-                <h2 data-i18n="benefits_title">Waarom kiezen voor Myshine?</h2>
-                <div class="benefits-list">
-                    <div class="benefit-item">
-                        <h4 data-i18n="benefit1_title">Vakkundige specialisten</h4>
-                        <p data-i18n="benefit1_desc">Ons team bestaat uit ervaren detailers die jouw auto behandelen alsof het hun eigen voertuig is.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h4 data-i18n="benefit2_title">Duurzame bescherming</h4>
-                        <p data-i18n="benefit2_desc">Wij gebruiken professionele SiO₂‑gebaseerde coatings die 1–2 jaar bescherming bieden tegen vuil en UV.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h4 data-i18n="benefit3_title">Persoonlijke aanpak</h4>
-                        <p data-i18n="benefit3_desc">We stemmen onze diensten af op de staat van jouw auto en jouw wensen voor een perfect resultaat.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="hero-text">
+<h1>Professioneel auto polijsten</h1>
+<p>Laat je auto opnieuw stralen met MyShine. Lakcorrectie, hoogglans en echte detailkwaliteit.</p>
 
-        <!-- Pricing Section (table summarising packages) -->
-        <section id="pricing" class="section pricing">
-            <div class="container">
-                <h2 data-i18n="pricing_title">Tarieven</h2>
-                <table class="pricing-table">
-                    <thead>
-                        <tr>
-                            <th data-i18n="pricing_package">Pakket</th>
-                            <th data-i18n="pricing_includes">Inclusief</th>
-                            <th data-i18n="pricing_price">Prijs</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-i18n="pricing1_name">1‑staps polijsten</td>
-                            <td data-i18n="pricing1_desc">Enkel polijstfase, lichte correctie, keramische coating ±2 jaar</td>
-                            <td>€275</td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="pricing2_name">2‑staps polijsten</td>
-                            <td data-i18n="pricing2_desc">Cut &amp; polish, verwijdert matige krassen, keramische coating ±2 jaar</td>
-                            <td>€375</td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="pricing3_name">3‑staps polijsten</td>
-                            <td data-i18n="pricing3_desc">Cut, polish &amp; finish, maximale defectcorrectie, keramische coating ±2 jaar</td>
-                            <td>€475</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="table-note" data-i18n="pricing_note">
-                    * Alle prijzen zijn inclusief keramische coating met een verwachte levensduur van 1–2 jaar.
-                </div>
-            </div>
-        </section>
+<a href="#booking" class="btn">Boek een afspraak</a>
+</div>
 
-        <!-- Call to Action Section -->
-        <section class="section cta-section">
-            <div class="container">
-                <h2 data-i18n="cta_title">Klaar voor glans?</h2>
-                <p data-i18n="cta_desc">Plan nu jouw polijstbeurt en ervaar het verschil.</p>
-                <a href="booking.html" class="btn primary" data-i18n="cta_button">Maak een afspraak</a>
-            </div>
-        </section>
+<div class="hero-image">
+<img src="hero.jpg" alt="Auto polishing">
+</div>
 
-        <!-- Quote/Contact Section -->
-        <section id="quote" class="section quote">
-            <div class="container">
-                <h2 data-i18n="quote_title">Vraag een offerte aan</h2>
-                <p data-i18n="quote_desc">Laat je gegevens en wensen achter, dan nemen we contact met je op met een vrijblijvende offerte.</p>
-                <!-- Quote form using FormSubmit: primary action to myshine.carpolishing@hotmail.com with CC to Mamo2001@live.be -->
-                <form class="quote-form" id="quote-form" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="quote-name" data-i18n="quote_name_label">Naam</label>
-                        <input type="text" id="quote-name" name="name" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="quote-email" data-i18n="quote_email_label">E‑mail</label>
-                        <input type="email" id="quote-email" name="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="quote-phone" data-i18n="quote_phone_label">Telefoon</label>
-                        <input type="tel" id="quote-phone" name="phone" />
-                    </div>
-                    <div class="form-group">
-                        <label for="quote-car" data-i18n="quote_car_label">Automodel</label>
-                        <input type="text" id="quote-car" name="car" />
-                    </div>
-                    <div class="form-group">
-                        <label data-i18n="quote_service_label">Gewenste service</label>
-                        <div class="quote-services">
-                            <label class="option-card">
-                                <input type="checkbox" name="services" value="1‑stap" />
-                                <span class="option-content" data-i18n="quote_option1">1‑stap polijsten</span>
-                            </label>
-                            <label class="option-card">
-                                <input type="checkbox" name="services" value="2‑staps" />
-                                <span class="option-content" data-i18n="quote_option2">2‑staps polijsten</span>
-                            </label>
-                            <label class="option-card">
-                                <input type="checkbox" name="services" value="3‑staps" />
-                                <span class="option-content" data-i18n="quote_option3">3‑staps polijsten</span>
-                            </label>
-                            <label class="option-card">
-                                <input type="checkbox" name="services" value="glas" />
-                                <span class="option-content" data-i18n="quote_option4">Glas polijsten</span>
-                            </label>
-                            <label class="option-card">
-                                <input type="checkbox" name="services" value="spotrepair" />
-                                <span class="option-content" data-i18n="quote_option5">Spotrepair</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="quote-message" data-i18n="quote_message_label">Opmerkingen / details</label>
-                        <textarea id="quote-message" name="message" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn primary" data-i18n="quote_submit">Verzend aanvraag</button>
-                </form>
-            </div>
-        </section>
-    </main>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; <span id="year"></span> Myshine</p>
-            <p class="social">
-                <a href="https://www.instagram.com/myshine.carpolishing" target="_blank">@myshine.carpolishing</a>
-            </p>
-        </div>
-    </footer>
+<section id="services" class="services">
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        // Update current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<h2>Onze polijstbeurten</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>1‑staps polijsten</h3>
+<p class="price">€275</p>
+<p>Lichte lakdefecten</p>
+<p>Extra glans</p>
+</div>
+
+<div class="card">
+<h3>2‑staps polijsten</h3>
+<p class="price">€375</p>
+<p>Matige krassen</p>
+<p>Correctie + verfijnen</p>
+</div>
+
+<div class="card">
+<h3>3‑staps polijsten</h3>
+<p class="price">€475</p>
+<p>Maximale lakcorrectie</p>
+<p>Showroom glans</p>
+</div>
+
+<div class="card">
+<h3>Glas polijsten</h3>
+<p class="price">€25</p>
+<p>Voor of achterruit</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="booking" class="booking">
+
+<h2>Boek een behandeling</h2>
+
+<form>
+
+<input type="text" placeholder="Naam" required>
+<input type="email" placeholder="Email" required>
+<input type="text" placeholder="Auto merk" required>
+<input type="text" placeholder="Model" required>
+<input type="text" placeholder="Kleur lak" required>
+<input type="number" placeholder="Bouwjaar" required>
+
+<select>
+<option>1‑staps polijsten</option>
+<option>2‑staps polijsten</option>
+<option>3‑staps polijsten</option>
+</select>
+
+<button type="submit">Verstuur aanvraag</button>
+
+</form>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: myshine.carpolishing@hotmail.com</p>
+<p>Instagram: <a href="https://instagram.com/myshine.carpolishing" target="_blank">@myshine.carpolishing</a></p>
+
+</section>
+
+<footer>
+
+<p>© MyShine Car Polishing</p>
+
+</footer>
+
 </body>
 </html>
