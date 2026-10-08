@@ -3,37 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>MyShine | Professioneel Auto Polijsten</title>
-  <meta name="description" content="MyShine professioneel auto polijsten. Lakcorrectie vanaf €300 en koplampenherstel voor €35 per koplamp. Ontdek de behandelingen en vraag een offerte aan." />
+  <title>MyShine | Professioneel Auto Polijsten & Koplampen Herstel</title>
+  <meta name="description" content="MyShine professioneel auto polijsten. Lakcorrectie, glansherstel, koplampen herstel en offerte aanvragen." />
+  <meta name="theme-color" content="#08080c" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#services">Naar de behandelingen</a>
   <header class="site-header">
     <div class="container nav">
       <a href="#home" class="brand">My<span>Shine</span></a>
 
+      <nav class="desktop-nav">
+        <a href="#services">Services</a>
+        <a href="#koplampen">Koplampen</a>
+        <a href="#results">Before / After</a>
+        <a href="#why">Waarom MyShine</a>
+        <a href="#contact">Contact</a>
+        <a href="#quote" class="nav-cta">Offerte</a>
+      </nav>
+
       <button class="menu-toggle" id="menuToggle" aria-controls="mobileNav" aria-label="Menu openen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-
-      <nav class="desktop-nav">
-        <a href="#services">Services</a>
-        <a href="#headlights">Koplampen</a>
-        <a href="#results">Resultaten</a>
-        <a href="#why">Waarom MyShine</a>
-        <a href="#quote">Offerte</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </div>
 
     <nav class="mobile-nav" id="mobileNav">
       <a href="#services">Services</a>
-      <a href="#headlights">Koplampen</a>
-        <a href="#results">Resultaten</a>
+      <a href="#koplampen">Koplampen herstel</a>
+      <a href="#results">Before / After</a>
       <a href="#why">Waarom MyShine</a>
       <a href="#quote">Offerte</a>
       <a href="#contact">Contact</a>
@@ -42,12 +42,14 @@
 
   <main id="home">
     <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="eyebrow">Professioneel auto polijsten</div>
-          <h1>Een nieuwe glans.<br><span>Dezelfde wagen.</span></h1>
+          <h1>Geef je wagen opnieuw <span>diepe glans</span>.</h1>
           <p>
-            Van doffe lak naar een diepe glans. Van gele koplampen naar een heldere uitstraling. Ontdek de aandacht voor detail van MyShine.
+            MyShine focust op lakcorrectie, glansherstel en koplampen herstel.
+            Duidelijke prijzen, duidelijke services en een resultaat dat opvalt.
           </p>
 
           <div class="hero-actions">
@@ -55,15 +57,15 @@
             <a href="#services" class="btn btn-secondary">Bekijk services</a>
           </div>
 
-          <div class="hero-meta">
-            <span>Auto polijsten</span>
-            <span>Lakcorrectie</span>
-            <span>Hoogglans</span>
-          </div>
+          <ul class="hero-stats">
+            <li><strong>€300</strong><span>Polijsten vanaf</span></li>
+            <li><strong>€35</strong><span>Koplamp herstel</span></li>
+            <li><strong>Zo &amp; Ma</strong><span>Boekingsdagen</span></li>
+          </ul>
         </div>
 
         <div class="hero-visual">
-          <img src="hero.jpg" alt="MyShine Car Polishing — zwart en paars logo met sportwagen" class="hero-image" />
+          <img src="hero.jpg" alt="MyShine Car Polishing logo" class="hero-image" />
         </div>
       </div>
     </section>
@@ -73,74 +75,194 @@
         <div class="section-head">
           <div class="eyebrow">Services</div>
           <h2>Onze behandelingen</h2>
-          <p>Kies de behandeling die past bij jouw lak en het resultaat dat je wil behalen.</p>
+          <p>Van een glansopfrissing tot intensieve lakcorrectie: kies hoeveel aandacht jouw lak nodig heeft. Alle drie de polijstbehandelingen zijn inclusief een keramische coating met een standtijd van 2 jaar bij correct onderhoud.</p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <span class="card-number">01 / REFRESH</span><h3>1-staps polijsten</h3>
+            <div class="steps" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+            <h3>1-staps polijsten</h3>
             <div class="price">€300</div>
             <ul>
-              <li>Lichte krasjes en swirls verminderen</li>
-              <li>Meer glans en diepere laklook</li>
-              <li>Perfect als opfrisbeurt</li>
+              <li><strong>Eén polijststap:</strong> lichte lakcorrectie en glansherstel in één behandeling.</li>
+              <li><strong>Lichte carwashkrassen en swirls:</strong> fijne krasjes en kringvormige waskrassen worden aangepakt.</li>
+              <li><strong>Frissere lak:</strong> minder doffe uitstraling, meer glans en diepere kleur.</li>
+              <li><strong>Ideaal voor:</strong> lak in redelijk goede staat die een opfrisbeurt nodig heeft.</li>
+              <li><strong>Inbegrepen:</strong> keramische coating · 2 jaar standtijd bij correct onderhoud.</li>
             </ul>
+            <a href="#quote" class="btn btn-secondary card-btn" data-service="1-staps polijsten">Kies 1-staps</a>
           </article>
 
           <article class="card featured">
             <div class="tag">Correctie &amp; glans</div>
-            <span class="card-number">02 / CORRECT</span><h3>2-staps polijsten</h3>
+            <div class="steps" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></div>
+            <h3>2-staps polijsten</h3>
             <div class="price">€400</div>
             <ul>
-              <li>Grovere correctie + verfijning</li>
-              <li>Matige krassen en hologrammen aanpakken</li>
-              <li>Sterke balans tussen prijs en resultaat</li>
+              <li><strong>Stap 1 — corrigeren:</strong> een grovere polijststap pakt duidelijkere carwashkrassen en swirls aan.</li>
+              <li><strong>Stap 2 — verfijnen:</strong> fijn polijsten voor een heldere lak en diepe glans.</li>
+              <li><strong>Meer lakcorrectie:</strong> matige oppervlakkige krassen en hologrammen worden aangepakt.</li>
+              <li><strong>Ideaal voor:</strong> zichtbaar bekraste of doffe lak die meer correctie nodig heeft.</li>
+              <li><strong>Inbegrepen:</strong> keramische coating · 2 jaar standtijd bij correct onderhoud.</li>
             </ul>
+            <a href="#quote" class="btn btn-primary card-btn" data-service="2-staps polijsten">Kies 2-staps</a>
           </article>
 
           <article class="card">
-            <span class="card-number">03 / REFINE</span><h3>3-staps polijsten</h3>
+            <div class="steps" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+            <h3>3-staps polijsten</h3>
             <div class="price">€500</div>
             <ul>
-              <li>Intensieve lakcorrectie</li>
-              <li>Cut, polish en finish</li>
-              <li>Voor klanten die topresultaat willen</li>
+              <li><strong>Stap 1 — intensief corrigeren:</strong> de zwaardere oppervlakkige lakdefecten aanpakken.</li>
+              <li><strong>Stap 2 — verfijnen:</strong> resterende polijstsporen en fijnere krassen verminderen.</li>
+              <li><strong>Stap 3 — finish:</strong> een extra fijne afwerking voor maximale helderheid en diepe glans.</li>
+              <li><strong>Ideaal voor:</strong> sterk verweerde of bekraste lak, binnen wat veilig te corrigeren is.</li>
+              <li><strong>Inbegrepen:</strong> keramische coating · 2 jaar standtijd bij correct onderhoud.</li>
             </ul>
+            <a href="#quote" class="btn btn-secondary card-btn" data-service="3-staps polijsten">Kies 3-staps</a>
           </article>
-
-
         </div>
-        <div class="glass-service"><div><span class="eyebrow">Extra behandeling</span><h3>Glas polijsten</h3><p>Voor- of achterruit: fijne storende krasjes verminderen en helderheid verbeteren.</p></div><strong>€25+</strong><a href="#quote" class="btn btn-secondary">Vraag naar de mogelijkheden ↗</a></div>
+
+        <p class="correction-note">Carwashkrassen en swirls zijn fijne krasjes in de blanke lak, vaak zichtbaar in zonlicht. Polijsten kan ze verwijderen of sterk verminderen. Het resultaat hangt af van de diepte van de krassen en de staat van de lak; diepe krassen tot in de kleurlaag, steenslag en lakschade verdwijnen niet door polijsten.</p>
+
+        <div class="coating-panel" id="coating">
+          <div class="coating-intro"><div class="eyebrow">Inbegrepen bij €300 · €400 · €500</div><h3>Polijsten herstelt.<br>Keramische coating beschermt.</h3><p>Na het polijsten krijgt je lak een transparante beschermlaag. Bij alle drie de polijstpakketten zit deze coating in de prijs.</p><div class="coating-duration"><strong>2 jaar</strong><span>standtijd bij correct onderhoud</span></div></div>
+          <div class="coating-benefits">
+            <article><h4>Waterafstotend</h4><p>Water vormt druppels en loopt gemakkelijker van de lak.</p></article>
+            <article><h4>Makkelijker schoonmaken</h4><p>Vuil hecht minder gemakkelijk, waardoor wassen eenvoudiger wordt.</p></article>
+            <article><h4>Glans behouden</h4><p>Een beschermende afwerking voor de opgefriste lak en haar diepe glans.</p></article>
+            <article><h4>Onderhoud blijft belangrijk</h4><p>Was voorzichtig met schone materialen en een geschikte autoshampoo. Vermijd carwashborstels: ook gecoate lak kan nieuwe krassen krijgen.</p></article>
+          </div>
+        </div>
+
+        <div class="extras-row">
+          <a href="#koplampen" class="extra-card">
+            <div>
+              <span class="extra-new">Nieuw</span>
+              <h3>Koplampen herstel</h3>
+              <p>Gele, doffe koplampen opnieuw helder, met keramische coating.</p>
+            </div>
+            <div class="extra-price">€35<small>/ koplamp</small></div>
+          </a>
+
+          <div class="extra-card">
+            <div>
+              <h3>Glas polijsten</h3>
+              <p>Voor- of achterruit. Helderder zicht en minder storende fijne krasjes.</p>
+            </div>
+            <div class="extra-price">€25<small>+</small></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section headlights-section" id="headlights">
-      <div class="container headlights-grid">
-        <div class="section-head left"><div class="eyebrow">Koplampenherstel</div><h2>Gele koplampen?<br><span>Maak ze weer helder.</span></h2><p>Geoxideerde koplampen kunnen de lichtopbrengst verminderen en je zicht in het donker beperken. We herstellen het oppervlak en werken het af met een keramische coating.</p><p class="inspection-note">Sterk vergeelde of geoxideerde koplampen kunnen tot afkeur leiden bij de keuring. Herstel kan een oplossing zijn; het resultaat hangt af van de staat van de koplamp. Geen garantie op goedkeuring.</p><a href="#quote" class="btn btn-primary" data-service="Koplampenherstel — beide koplampen (€70)">Vraag koplampenherstel aan ↗</a></div>
-        <div class="headlight-card"><div class="headlight-symbol" aria-hidden="true">◉ <span>╱ ╱ ╱</span></div><ol class="treatment-steps"><li><span>01</span><div><h3>3 keer opschuren</h3><p>Drie schuurstappen om de geoxideerde laag aan te pakken.</p></div></li><li><span>02</span><div><h3>Polijsten</h3><p>Het oppervlak verfijnen voor een heldere afwerking.</p></div></li><li><span>03</span><div><h3>Keramisch beschermen</h3><p>Een keramische coating als beschermende afwerking.</p></div></li></ol><div class="headlight-prices"><div><strong>€35</strong><span>per koplamp</span></div><div><strong>€70</strong><span>voor beide koplampen</span></div></div></div>
+    <section class="section alt" id="koplampen">
+      <div class="container headlight-grid">
+        <div class="headlight-copy">
+          <div class="eyebrow">Nieuw · Koplampen herstel</div>
+          <h2>Gele koplampen? <span>Opnieuw helder.</span></h2>
+          <p class="lead">
+            Geoxideerde koplampen zien er niet alleen verouderd uit, ze geven ook merkbaar minder licht.
+            Ideaal als je fel gele koplampen hebt of weinig zicht hebt in het donker.
+          </p>
+
+          <ol class="process">
+            <li>
+              <b>01</b>
+              <div><strong>3x opschuren</strong><span>De gele, geoxideerde laag wordt in drie stappen weggeschuurd.</span></div>
+            </li>
+            <li>
+              <b>02</b>
+              <div><strong>Polijsten</strong><span>De koplamp wordt gepolijst tot hij opnieuw helder en transparant is.</span></div>
+            </li>
+            <li>
+              <b>03</b>
+              <div><strong>Keramische coating</strong><span>Een beschermlaag houdt je koplampen langer helder.</span></div>
+            </li>
+          </ol>
+
+          <div class="keuring-note">
+            <strong>Afgekeurd op de keuring?</strong>
+            Sterk geoxideerde of gele koplampen kunnen tot afkeur leiden als de verlichting onvoldoende is. Herstel kan helpen wanneer oxidatie aan de buitenkant de oorzaak is. Beschadigingen aan de binnenkant of andere verlichtingsproblemen vragen een andere aanpak.
+          </div>
+        </div>
+
+        <div class="headlight-side">
+          <div class="headlight-visual" aria-hidden="true">
+            <svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="hlYellow" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#d8b24a"/>
+                  <stop offset="1" stop-color="#8a6a1e"/>
+                </linearGradient>
+                <linearGradient id="hlClear" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#eef2ff"/>
+                  <stop offset="0.55" stop-color="#9aa6c7"/>
+                  <stop offset="1" stop-color="#3a3f55"/>
+                </linearGradient>
+                <radialGradient id="beam" cx="0" cy="0.5" r="1">
+                  <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+                  <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                </radialGradient>
+                <filter id="haze"><feGaussianBlur stdDeviation="2.2"/></filter>
+              </defs>
+
+              <!-- Before -->
+              <path d="M30 150 Q40 80 140 70 L215 75 Q235 110 215 160 Q150 190 60 180 Q30 175 30 150Z" fill="url(#hlYellow)" stroke="#5a4716" stroke-width="3"/>
+              <g filter="url(#haze)" opacity="0.8">
+                <circle cx="95" cy="128" r="26" fill="#c9a548"/>
+                <circle cx="165" cy="120" r="20" fill="#c9a548"/>
+              </g>
+              <path d="M48 140 Q90 110 200 100" stroke="#f3d67a" stroke-opacity="0.35" stroke-width="6" fill="none" filter="url(#haze)"/>
+              <text x="125" y="228" text-anchor="middle" class="svg-label">VOOR</text>
+
+              <!-- After -->
+              <path d="M300 150 Q310 80 410 70 L485 75 Q505 110 485 160 Q420 190 330 180 Q300 175 300 150Z" fill="url(#hlClear)" stroke="#c9b6ff" stroke-width="3"/>
+              <circle cx="365" cy="128" r="26" fill="#ffffff" stroke="#b9a3ff" stroke-width="3"/>
+              <circle cx="365" cy="128" r="11" fill="#e8e2ff"/>
+              <circle cx="435" cy="120" r="20" fill="#ffffff" stroke="#b9a3ff" stroke-width="3"/>
+              <path d="M318 112 Q360 90 470 86" stroke="#ffffff" stroke-opacity="0.9" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M330 100 l8 -8 M470 150 l10 6" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+              <text x="395" y="228" text-anchor="middle" class="svg-label svg-label-accent">NA</text>
+            </svg>
+          </div>
+
+          <div class="headlight-prices">
+            <div class="hp">
+              <span>Per koplamp</span>
+              <strong>€35</strong>
+            </div>
+            <div class="hp hp-best">
+              <span>Beide koplampen</span>
+              <strong>€70</strong>
+            </div>
+          </div>
+
+          <a href="#quote" class="btn btn-primary full-btn" data-service="Enkel koplampen herstel">Boek koplampen herstel</a>
+        </div>
       </div>
     </section>
 
-    <section class="section alt" id="results">
+    <section class="section" id="results">
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Before / After</div>
           <h2>Laat het resultaat spreken</h2>
-          <p>Bekijk het verschil voor en na het polijsten. Verschuif de balk om de lak te vergelijken.</p>
+          <p>Sleep de slider en zie het verschil na een polijstbehandeling.</p>
         </div>
 
         <div class="comparison-card">
           <div class="comparison-wrap" id="comparisonWrap">
             <!-- Base image shows the AFTER (gepolijste lak) on the right side -->
-            <img src="after.jpg" alt="Lak na het polijsten" class="comparison-img base-img" />
+            <img src="after.jpg" alt="After polishing" class="comparison-img base-img" />
             <div class="overlay-wrap" id="overlayWrap">
               <!-- Overlay image shows the BEFORE (beschadigde lak) on the left side -->
-              <img src="before.jpg" alt="Lak vóór het polijsten" class="comparison-img overlay-img" />
+              <img src="before.jpg" alt="Before polishing" class="comparison-img overlay-img" />
             </div>
             <div class="comparison-line" id="comparisonLine"></div>
             <div class="comparison-handle" id="comparisonHandle"></div>
-            <div class="comparison-label before-label">VOOR</div>
-            <div class="comparison-label after-label">NA</div>
+            <div class="comparison-label before-label">BEFORE</div>
+            <div class="comparison-label after-label">AFTER</div>
           </div>
 
           <input type="range" min="0" max="100" value="50" class="comparison-range" id="comparisonRange" aria-label="Before after slider" />
@@ -148,7 +270,7 @@
       </div>
     </section>
 
-    <section class="section" id="why">
+    <section class="section alt" id="why">
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Waarom MyShine</div>
@@ -157,16 +279,19 @@
 
         <div class="why-grid">
           <div class="why-card">
+            <div class="why-icon" aria-hidden="true">✦</div>
             <h3>Diepe glans</h3>
             <p>Je wagen krijgt opnieuw een frissere, strakkere en meer verzorgde uitstraling.</p>
           </div>
 
           <div class="why-card">
+            <div class="why-icon" aria-hidden="true">◎</div>
             <h3>Correcte aanpak</h3>
             <p>De behandeling wordt gekozen op basis van wat jouw lak echt nodig heeft.</p>
           </div>
 
           <div class="why-card">
+            <div class="why-icon" aria-hidden="true">€</div>
             <h3>Duidelijke service</h3>
             <p>Geen overbodige uitleg. Gewoon helder contact, duidelijke prijzen en netjes werk.</p>
           </div>
@@ -174,7 +299,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="quote">
+    <section class="section" id="quote">
       <div class="container quote-grid">
         <div class="section-head left">
           <div class="eyebrow">Offerte</div>
@@ -184,6 +309,15 @@
           <div class="booking-note">
             <strong>Boekingsdagen:</strong> alleen zondag en maandag.
           </div>
+
+          <p class="quote-included">Alle polijstprijzen zijn inclusief keramische coating met 2 jaar standtijd bij correct onderhoud.</p>
+          <ul class="price-summary">
+            <li><span>1-staps polijsten</span><b>€300</b></li>
+            <li><span>2-staps polijsten</span><b>€400</b></li>
+            <li><span>3-staps polijsten</span><b>€500</b></li>
+            <li><span>Koplampen herstel</span><b>€35 / €70</b></li>
+            <li><span>Glas polijsten</span><b>€25+</b></li>
+          </ul>
 
           <div class="contact-mini">
             <a href="mailto:myshine.carpolishing@hotmail.com">myshine.carpolishing@hotmail.com</a>
@@ -197,15 +331,17 @@
             <input type="text" name="naam" required>
           </label>
 
-          <label>
-            E-mail
-            <input type="email" name="email" required>
-          </label>
+          <div class="form-grid">
+            <label>
+              E-mail
+              <input type="email" name="email" required>
+            </label>
 
-          <label>
-            Telefoonnummer
-            <input type="tel" name="telefoon">
-          </label>
+            <label>
+              Telefoonnummer
+              <input type="tel" name="telefoon">
+            </label>
+          </div>
 
           <div class="form-grid">
             <label>
@@ -234,13 +370,12 @@
           <div class="form-grid">
             <label>
               Behandeling
-              <select name="behandeling" required>
+              <select name="behandeling" id="serviceSelect" required>
                 <option value="">Kies een behandeling</option>
                 <option>1-staps polijsten</option>
                 <option>2-staps polijsten</option>
                 <option>3-staps polijsten</option>
-                <option>Koplampenherstel — één koplamp (€35)</option>
-                <option>Koplampenherstel — beide koplampen (€70)</option>
+                <option>Enkel koplampen herstel</option>
               </select>
             </label>
 
@@ -250,8 +385,17 @@
             </label>
           </div>
 
-          <!-- Extra option: Glas polijsten, only selectable in addition to a polijstbehandeling -->
-          <div class="form-grid">
+          <!-- Extra opties -->
+          <div class="form-grid extras-grid">
+            <label>
+              Koplampen herstel
+              <select name="koplampen" id="headlightSelect">
+                <option value="">Geen</option>
+                <option value="Koplampen herstel - 1 koplamp (€35)">1 koplamp (€35)</option>
+                <option value="Koplampen herstel - beide koplampen (€70)">Beide koplampen (€70)</option>
+              </select>
+            </label>
+
             <label class="checkbox-label">
               <input type="checkbox" name="glaspolijsten" value="Glas polijsten" />
               Glas polijsten (extra)
@@ -260,7 +404,7 @@
 
           <label>
             Extra info
-            <textarea name="bericht" rows="4" placeholder="Bijvoorbeeld diepe krassen, coating gewenst, enz."></textarea>
+            <textarea name="bericht" rows="4" placeholder="Bijvoorbeeld zichtbare carwashkrassen, doffe lak of gele koplampen."></textarea>
           </label>
 
           <button type="submit" class="btn btn-primary full-btn">Verstuur aanvraag</button>
@@ -269,7 +413,7 @@
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section alt" id="contact">
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Contact</div>
@@ -291,7 +435,17 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><a href="#home" class="brand">My<span>Shine</span></a><span>Car polishing · Aandacht voor elk detail.</span><a href="https://instagram.com/myshine.be" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand brand-sm">My<span>Shine</span></a>
+      <span>Car Polishing · Boekingen op zondag &amp; maandag</span>
+    </div>
+  </footer>
+
+  <!-- Instagram floating button -->
+  <a class="instagram-float" href="https://instagram.com/myshine.be" target="_blank" rel="noopener noreferrer" aria-label="Instagram MyShine">
+    <span>Instagram</span>
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>

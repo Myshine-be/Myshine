@@ -39,6 +39,20 @@ if (comparisonRange) {
   comparisonRange.addEventListener('input', (e) => updateComparison(e.target.value));
 }
 
+// "Kies"-knoppen: behandeling vooraf invullen in het formulier
+const serviceSelect = document.getElementById('serviceSelect');
+const headlightSelect = document.getElementById('headlightSelect');
+
+document.querySelectorAll('[data-service]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (!serviceSelect) return;
+    serviceSelect.value = btn.dataset.service;
+    if (btn.dataset.service === 'Enkel koplampen herstel' && headlightSelect && !headlightSelect.value) {
+      headlightSelect.selectedIndex = 2; // beide koplampen
+    }
+  });
+});
+
 // Booking date restriction: Sunday or Monday only
 const bookingDate = document.getElementById("bookingDate");
 const feedback = document.getElementById("formFeedback");
@@ -87,6 +101,11 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    if (form.elements['behandeling']?.value === 'Enkel koplampen herstel' && !form.elements['koplampen']?.value) {
+      feedback.innerText = "Kies 1 koplamp of beide koplampen.";
+      return;
+    }
+
     // Build a templateParams object that maps the form fields
     // to the variable names defined in the EmailJS template.
     const service = form.elements['behandeling']?.value || '';
@@ -98,8 +117,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // There are currently no time or extras fields in the form,
     // so leave these empty. EmailJS will receive empty strings for these.
     const bookingTime = '';
-    // Extras: set to "Glas polijsten" if the checkbox is checked
-    const extras = form.elements['glaspolijsten']?.checked ? form.elements['glaspolijsten'].value : '';
+    // Extras: koplampen herstel en/of glas polijsten
+    const extras = [
+      form.elements['koplampen']?.value || '',
+      form.elements['glaspolijsten']?.checked ? form.elements['glaspolijsten'].value : ''
+    ].filter(Boolean).join(', ');
     const merkVal = form.elements['merk']?.value || '';
     const modelVal = form.elements['model']?.value || '';
     const kleurVal = form.elements['kleur']?.value || '';
@@ -153,8 +175,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// Select the requested treatment when following a service link.
-document.querySelectorAll("[data-service]").forEach(link => link.addEventListener("click", () => {
-  document.querySelector("select[name=behandeling]").value = link.dataset.service;
-}));
