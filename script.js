@@ -29,7 +29,7 @@ const comparisonHandle = document.getElementById('comparisonHandle');
 
 function updateComparison(value) {
   if (!overlayWrap || !comparisonLine || !comparisonHandle) return;
-  overlayWrap.style.width = value + '%';
+  overlayWrap.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
   comparisonLine.style.left = value + '%';
   comparisonHandle.style.left = value + '%';
 }
@@ -67,7 +67,7 @@ if (bookingDate) {
 
 // EmailJS
 (function () {
-  emailjs.init(EMAILJS_PUBLIC_KEY);
+  if (window.emailjs) emailjs.init(EMAILJS_PUBLIC_KEY);
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -127,6 +127,13 @@ document.addEventListener("DOMContentLoaded", function () {
       quote_message: comments
     };
 
+    if (!window.emailjs) {
+      feedback.innerText = "Verzenden is momenteel niet beschikbaar. Mail naar myshine.carpolishing@hotmail.com.";
+      return;
+    }
+    const submitButton = form.querySelector("button[type=submit]");
+    submitButton.disabled = true;
+    submitButton.textContent = "Aanvraag verzenden…";
     emailjs.send(
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
@@ -135,10 +142,19 @@ document.addEventListener("DOMContentLoaded", function () {
       feedback.innerText = "Aanvraag verzonden. MyShine neemt snel contact met je op.";
       form.reset();
       // Reset the slider to the default midpoint after successful submission
-      if (comparisonRange) updateComparison(50);
+      if (comparisonRange) { comparisonRange.value = 50; updateComparison(50); }
+      bookingDate.classList.remove("invalid-date", "valid-date");
     }).catch(function (error) {
       feedback.innerText = "Fout bij verzenden. Probeer opnieuw.";
       console.error("EmailJS error:", error);
+    }).finally(() => {
+      submitButton.disabled = false;
+      submitButton.textContent = "Verstuur aanvraag";
     });
   });
 });
+
+// Select the requested treatment when following a service link.
+document.querySelectorAll("[data-service]").forEach(link => link.addEventListener("click", () => {
+  document.querySelector("select[name=behandeling]").value = link.dataset.service;
+}));
